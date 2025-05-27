@@ -5,7 +5,21 @@ description = "parallelising multi-model GPU inference!"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "setuptools>=80.9.0",
+    "fastapi>=0.115.12",
+    "orjson>=3.10.18",
+    "packaging>=25.0",
+    "pillow>=11.2.1",
+    "psutil>=7.0.0",
+    "pydantic>=2.11.5",
+    "pynvml>=12.0.0",
+    "sentencepiece>=0.2.0",
+    "sgl-kernel>=0.1.4",
     "sglang>=0.4.6.post5",
-    "vllm>=v0.8.5.post1",
+    "torch>=2.7.0",
+    "torchao>=0.11.0",
+    "transformers>=4.52.3",
+    "triton>=3.2.0",
+    "uvicorn>=0.34.2",
+    "uvloop>=0.21.0",
+    "zmq>=0.0.0",
 ]
