@@ -15,3 +15,7 @@ python3 -m sglang.launch_server --port 31111 --host 0.0.0.0 \
     --model-path "${MODEL}" \
     --context-length 1024 \
     --mem-fraction-static 0.3
+
+if [ $? != 0 ]; then
+    echo "If error with sglang deps, run: `<uv> pip install "sglang[all]>=0.4.6.post4"`"
+fi
