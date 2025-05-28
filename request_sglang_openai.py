@@ -1,8 +1,10 @@
 import openai
 import sys
+import PORT from ./config.py
 
 
-PORT=sys.argv[1]
+#PORT=sys.argv[1]
+#PORT=31111
 
 
 client = openai.Client(base_url=f"http://127.0.0.1:{PORT}/v1", api_key="None")

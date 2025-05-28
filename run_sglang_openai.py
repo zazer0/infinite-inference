@@ -7,7 +7,9 @@ from sglang.utils import launch_server_cmd
 
 from sglang.utils import wait_for_server, print_highlight, terminate_process
 
-PORT=31111
+import PORT from ./config.py
+
+#PORT=31111
 
 server_process, port = launch_server_cmd(
     "python3 -m sglang.launch_server --model-path IlyaGusev/gemma-2-2b-it-abliterated --context-length 1024 --host 0.0.0.0 --mem-fraction-static 0.3 --attention-backend flashinfer", port=PORT
